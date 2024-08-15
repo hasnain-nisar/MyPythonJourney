@@ -1,0 +1,40 @@
+# Case Conversion
+
+print("HASNAIN".lower())  # Covert all characters in the string to lower case.
+
+print("hasnain".upper()) # Convert all characters in the string to upper case.
+
+print("hasnain nisar".capitalize()) # Capitalize the first character of the string.
+
+print("hasnain nisar".title()) # Capitalize the fisrt character of each word in the string.
+
+# Find and replace functions
+
+text = "Hello, welcome to the world of Python programming."
+
+print(text.find("welcome")) # find the position of first occurence of word "welcome"
+
+print(text.find("java"))  # Find the position of "Java" which is not in the string.
+
+# output in this case will be -1.
+
+# Find the position of "o" after index 10
+
+print(text.find("o", 10))
+
+# Find the position of "o" between index 10 and 25
+
+print(text.find("o", 10, 25))
+
+# Replace Function
+
+# string.replace (old word, new word ) – This function replace the old word with 
+# new word in the entire string. 
+
+str = "Hasnain Nisar"
+print(str.replace("n", "N"))
+
+text = "python is really really easy."
+print(text.replace("really", "so"))  # Replace function replace all occurences in the string.
+
+# output: python is so so easy.
