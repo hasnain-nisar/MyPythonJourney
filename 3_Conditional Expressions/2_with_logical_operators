@@ -1,0 +1,23 @@
+name = input("Enter your name: ")
+age = int(input(f"{name} enter your age: "))
+income = int(input(f"{name} enter your monthly income: "))
+credit_score = int(input(f"{name} enter your credit score: "))
+
+if(age<=0):
+    print(f"{name} please enter a valid number.")
+
+elif(income<=0):
+    print(f"{name} please enter a valid number.")
+
+elif(credit_score<=0):
+    print(f"{name} please enter a valid number.")
+
+else:
+    if age > 18 and income > 40000 and credit_score > 700:
+        print(f"{name} you are eligible for a premium credit card.")
+    
+    elif age > 18 and income > 20000 and credit_score >= 650:
+        print(f"{name} you are eligible for standard credit card.")
+
+    else:
+        print(f"{name} you are not eligible for credit card.")
