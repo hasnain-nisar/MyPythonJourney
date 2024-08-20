@@ -1,0 +1,9 @@
+# Write a program to find out whether a given post is talking about “Ali” or not. 
+
+post = input("'Enter the post: ")
+
+if "Ali".lower() in post.lower():
+    print("This post is talking about ali.")
+
+else:
+    print("This post is not talking about ali.")

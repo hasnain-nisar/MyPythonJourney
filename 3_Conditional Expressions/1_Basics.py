@@ -45,3 +45,10 @@ elif score >= 60:
     print("Grade: D")
 else:
     print("Grade: F")
+
+# If statement can be executed without elif and else. i.e.
+a = 11
+if (a>10):
+    print("a is greater than 10")
+
+# But elif and else cannot be executed single.
