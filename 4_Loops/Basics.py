@@ -42,6 +42,48 @@ while i < len(list):
 # for loops.
 # A for loop is used to iterate through a sequence like list, tuples, or strings [iterable]
 
-l = [1, 7, 8]
+# Iterations over list and tuples.
+
+l = [1, 7, "Hasnain", 8] # list
 for item in l:
     print(item)
+
+t = (1, "Hasnain", 11, "123") # Tuple
+for item in t:
+    print(item)
+
+s = "hasnain nisar" # String
+for item in s:
+    print(item)
+
+dict = {'a': 1, 'b': 2, 'c': 3}
+for key in dict: # This will print the keys.
+    print(key)
+
+'''Output:
+        a
+        b
+        c
+'''
+
+# Iterating over values.
+
+for value in dict.values(): # This will print the values.
+    print(value) 
+
+'''Output:
+        1
+        2
+        3
+'''
+
+# Iterating over key-value pair.
+
+for key, value in dict.items():  # This will print both keys and values.
+    print(f"{key}: {value}") 
+
+'''Output:
+        a: 1
+        b: 2
+        c:3
+'''
