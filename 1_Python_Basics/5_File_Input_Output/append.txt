@@ -1,3 +1,0 @@
-This is a demo file for open() function wih append 'a' argument.
-This is a new line added to append.txt file.
-This is another new line without using backslashn at the endThis is another new line.
