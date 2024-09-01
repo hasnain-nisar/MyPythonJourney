@@ -1,0 +1,3 @@
+Automatic Resource Management: The with statement ensures that the file is properly closed after its suite finishes, even if an exception is raised.
+
+Cleaner Code: It makes the code more concise and readable by removing the need to explicitly call close().
