@@ -1,0 +1,21 @@
+# Define a class
+
+class Car:
+    # Class attributes
+    wheels = 4
+
+    # Object initializer (constructor)
+    def __init__(self, brand, model):
+        # Object attributes
+        self.brand = brand
+        self.model = model
+
+    # Method (behaviour)
+    def deisplay_info(self):
+        print(f"Car: {self.brand} {self.model}, Wheels: {self.wheels}")
+
+# Create an object (instance) of the car class.
+my_car = Car('Toyota', 'Corolla')
+
+# Accesing object attributes and methods
+my_car.deisplay_info()

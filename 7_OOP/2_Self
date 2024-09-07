@@ -1,0 +1,53 @@
+'''
+
+In Python's Object-Oriented Programming (OOP), the self argument is a reference to the current instance of the
+class. It is used within a class method to access instance variables and other methods of the class. Every time
+a method is called on an object, Python automatically passes the object itself as the first argument,
+which is why the first parameter of instance methods is always self.
+
+'''
+
+
+
+class Employee():
+    language = "English"
+    salary = "20000"
+
+    def get_info(self):
+        print(f"The language is {self.language}. And the salary is {self.salary}")
+
+    def greet(self):
+        print("Good Morning")
+
+Hasnain = Employee()
+
+Hasnain.greet()
+Hasnain.get_info()
+# OR
+Employee.get_info(Hasnain)
+
+# self represents the instance on which the method is called.
+
+# It allows access to attributes and methods specific to that instance.
+
+# It must always be the first parameter in instance methods but is not explicitly passed when calling the method.
+
+
+'''
+Static Method:
+Sometimes we need a function that does'nt use the self parameter. We can define a static method like this:
+'''
+
+class Employee():
+    language = "English"
+    salary = "20000"
+
+    def get_info(self):
+        print(f"The language is {self.language}. And the salary is {self.salary}")
+
+    @staticmethod
+    def greet():
+        print("Good Morning")
+
+Hasnain.greet()
+Hasnain.get_info()

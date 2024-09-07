@@ -1,0 +1,40 @@
+'''
+__init__() is a special method that get executed automatically when you create or instantiate an object from a class.
+Th epurpose of init method is to initialize th eobject's attribute with the values passed as the object is created.
+
+How __init__ works
+
+The __init__ method allows you to set initial values for the attributes of an object when it is created.
+
+It takes self as its first argument, which refers to the instance (object) being created.
+
+You can pass additional parameters to __init__ to initialize object-specific data.
+
+Syntax:
+
+class ClassName:
+    def __init__(self, parameter1, parameter2, ...):
+        self.attribute1 = parameter1
+        self.attribute2 = parameter2
+        # More initialization if necessary
+
+'''
+
+class person():
+    def __init__(self, name, age, language): # dunder method stands for double underscore
+        self.name = name
+        self.age = age
+        self.language = language
+
+    @staticmethod
+    def greet():
+        print("Good Morning")
+
+person_1 = person('Hasnain Nisar', 23, "Urdu")
+print(person_1.name, person_1.age, person_1.language)
+
+
+# For another person
+
+person_2 = person('Ali', '25', 'English')
+print(person_2.name, person_2.age, person_2.language)
