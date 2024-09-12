@@ -1,6 +1,6 @@
 '''
 __init__() is a special method that get executed automatically when you create or instantiate an object from a class.
-Th epurpose of init method is to initialize th eobject's attribute with the values passed as the object is created.
+The purpose of init method is to initialize th object's attribute with the values passed as the object is created.
 
 How __init__ works
 
